@@ -3,6 +3,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import DocApp from "../../assets/images/doc-app.png";
+import Ekart from "../../assets/images/ekart.png";
 gsap.registerPlugin(ScrollTrigger);
 
 const Projects = () => {
@@ -118,6 +119,48 @@ const Projects = () => {
       </h1>
       <div className="sm:space-y-40 space-y-32 xl:space-y-[35vh] z-30">
         {/* Perfect Health Clinic */}
+        <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
+          <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
+            <img
+              src={Ekart}
+              alt="project"
+              className="absolute w-full object-cover h-full img"
+            />
+            <div className="img-container absolute top-0 right-0 bg-[#8667ee] w-full h-full"></div>
+          </div>
+
+          <div className="text-container text-white lg:space-y-4 space-y-2 md:space-y-3 sm:space-y-3">
+            <h1 className="hidden-text font-bold font-Glimer-Bold cursor-default lg:text-4xl text-2xl sm:text-3xl 2xl:text-5xl lg:mt-0 mt-5">
+              <div className="content-line flex lg:justify-end items-center m-0 lg:h-[52px] 2xl:h-[60px] overflow-hidden bg-[#8667ee] ">
+                <div className="content-line-inner">Ekart Store</div>
+              </div>
+            </h1>
+            <p className="font-normal cursor-default font-Glimer-Light text-white/90 xl:text-2xl  sm:text-xl 2xl:text-3xl vvs:text-base text-sm lg:text-right">
+              An Ecommerce store that features Admin Panel, payment and email
+              invoice feature.
+            </p>
+            <div className="btn-row flex justify-start space-x-6 items-center lg:justify-end">
+              <div className="github-btn">
+                <a
+                  className="icon "
+                  target="_blank"
+                  href="https://github.com/veeveck/ekart-frontend"
+                >
+                  <BsGithub className="lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-translate-y-1 transition duration-200  ease-in-out repo text-white/90 hover:text-white" />
+                </a>
+              </div>
+              <div className="liveDemo-btn">
+                <a
+                  className="icon"
+                  target="_blank"
+                  href="https://github.com/veeveck/ekart-frontend"
+                >
+                  <BsArrowRight className="link lg:h-8 lg:w-8 2xl:h-9 2xl:w-9 vvs:h-6 vvs:w-6 sm:w-7 sm:h-7 h-5 w-5 hover:-rotate-[45deg] hover:text-white transition duration-200 ease-in-out text-white/90" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
         <div className="container lg:space-x-2 flex flex-col lg:flex-row lg:justify-between lg:items-center items-start invisible">
           <div className="lg:h-[400px] 2xl:h-[500px] h-[250px] sm:h-[300px] md:h-[350px] w-full relative overflow-hidden img-wrapper">
             <img
